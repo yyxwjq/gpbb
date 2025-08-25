@@ -1,0 +1,91 @@
+# GPBB Configuration
+# ============================================================================
+# This file contains all available configuration options for GPBB
+# Copy this file to 'config.yaml' and modify as needed
+
+# ============================================================================
+# REQUIRED PARAMETERS
+# ============================================================================
+
+# Input structure file (required)
+# Supported formats: xyz, extxyz, traj, any ASE-readable format
+filename: 'test.xyz'
+
+# Element mapping (required)
+# Maps original elements to target elements
+elements:
+  'Pd': 'Cu'  # Replace Pd with Cu
+  'Au': 'Cu'  # Replace Au with Cu
+  'O': 'O'    # Keep O unchanged
+  'C': 'C'    # Keep C unchanged
+
+# Bond scale factors (required)
+# Format: 'Element1-Element2': scale_factor
+# Elements should be sorted alphabetically in the key
+scale_factors:
+  # Metal-Metal bonds
+  'Pd-Pd': 0.927
+  'Au-Au': 0.885
+  'Au-Pd': 0.904
+  
+  # Metal-Molecule interface bonds
+  'Pd-C': 0.91
+  'Pd-O': 0.91
+  'Au-C': 0.91
+  'Au-O': 0.91
+  
+  # Molecule internal bonds (rigid molecules)
+  'C-O': 1.00
+  'C-C': 1.00
+  'O-O': 1.00
+
+# ============================================================================
+# OPTIMIZATION PARAMETERS
+# ============================================================================
+# Distance evaluation
+evaluation_distance_cutoff: 3.0  # Only optimize bonds within this distance (Angstrom)
+
+# Convergence criteria
+tolerance: 0.05               # Bond length tolerance (Angstrom)
+confidence_level: 0.90        # Target confidence (fraction of bonds within tolerance)
+steps: 2000                   # Maximum optimization steps
+
+# Adaptive step size control
+use_adaptive_step: true       # Enable adaptive step size
+initial_step_size: 0.005      # Initial step size
+min_step_size: 0.001        # Minimum allowed step size
+max_step_size: 0.02          # Maximum allowed step size
+# step_reduction_factor: 0.7    # Factor to reduce step size when errors increase
+# step_increase_factor: 1.1    # Factor to increase step size when stuck
+# patience: 50                  # Steps to wait before adjusting step size
+# error_history_size: 30         # Number of error values to track for trend analysis
+
+# Early stopping
+# early_stop_no_improvement: 500  # Stop if no improvement for this many steps
+# divergence_threshold: 3.0       # Revert if RMSE exceeds initial by this factor
+
+# ============================================================================
+# MOLECULE PROTECTION
+# ============================================================================
+
+# Molecule detection and protection
+enable_molecule_protection: true     # Protect molecular units during optimization
+molecule_detection_threshold: 1.5     # Bond cutoff for molecule detection (Angstrom)
+molecular_elements:                   # Elements that can form molecules
+  - 'C'
+  - 'O'
+# min_molecule_size: 2                  # Minimum atoms to consider as molecule
+# max_molecule_size: 20                 # Maximum atoms in a molecule
+
+# ============================================================================
+# COMPUTATIONAL SETTINGS
+# ============================================================================
+
+# Parallel processing
+num_cores: 5                    # Number of CPU cores to use
+
+# Logging
+log_level: 'INFO'              # Logging level: DEBUG, INFO, WARNING, ERROR
+convergence_check_interval: 50  # Log progress every N steps
+
+

@@ -1,0 +1,205 @@
+2025-08-25 22:49:13,931 - GPBB - INFO - ============================================================
+2025-08-25 22:49:13,931 - GPBB - INFO - BLAdjustGPBB - ML Dataset Conversion
+2025-08-25 22:49:13,931 - GPBB - INFO - Molecule Protection: Enabled
+2025-08-25 22:49:13,931 - GPBB - INFO - Confidence Target: 0.9
+2025-08-25 22:49:13,931 - GPBB - INFO - Algorithm: BL_adjust (Bond Length Optimization)
+2025-08-25 22:49:13,931 - GPBB - INFO - Distance Cutoff: 3.0 Å
+2025-08-25 22:49:13,931 - GPBB - INFO - Adaptive Step: Enabled
+2025-08-25 22:49:13,931 - GPBB - INFO - Initial Step Size: 0.005
+2025-08-25 22:49:13,931 - GPBB - INFO - ============================================================
+2025-08-25 22:49:13,947 - GPBB - INFO - Loaded 10 structures
+2025-08-25 22:49:14,338 - GPBB - INFO - Process 0: Starting 2 structures
+2025-08-25 22:49:14,346 - GPBB - INFO - Process 1: Starting 2 structures
+2025-08-25 22:49:14,351 - GPBB - INFO - Process 3: Starting 2 structures
+2025-08-25 22:49:14,357 - GPBB - INFO - Process 2: Starting 2 structures
+2025-08-25 22:49:14,366 - GPBB - INFO - Process 4: Starting 2 structures
+2025-08-25 22:49:14,440 - GPBB - INFO - Structure 6: Evaluating 351 bonds within 3.0 Å
+2025-08-25 22:49:14,440 - GPBB - INFO - Structure 6: Starting optimization - Initial RMSE: 0.2225 Å, Confidence: 0.1396, Evaluating 351 bonds
+2025-08-25 22:49:14,441 - GPBB - INFO - Structure 2: Evaluating 350 bonds within 3.0 Å
+2025-08-25 22:49:14,441 - GPBB - INFO - Structure 2: Starting optimization - Initial RMSE: 0.2220 Å, Confidence: 0.1257, Evaluating 350 bonds
+2025-08-25 22:49:14,442 - GPBB - INFO - Structure 8: Evaluating 325 bonds within 3.0 Å
+2025-08-25 22:49:14,442 - GPBB - INFO - Structure 8: Starting optimization - Initial RMSE: 0.2206 Å, Confidence: 0.1231, Evaluating 325 bonds
+2025-08-25 22:49:14,449 - GPBB - INFO - Structure 4: Evaluating 342 bonds within 3.0 Å
+2025-08-25 22:49:14,449 - GPBB - INFO - Structure 4: Starting optimization - Initial RMSE: 0.2193 Å, Confidence: 0.1316, Evaluating 342 bonds
+2025-08-25 22:49:14,491 - GPBB - INFO - Structure 0: Evaluating 599 bonds within 3.0 Å
+2025-08-25 22:49:14,492 - GPBB - INFO - Structure 0: Starting optimization - Initial RMSE: 0.2304 Å, Confidence: 0.0384, Evaluating 599 bonds
+2025-08-25 22:49:18,304 - GPBB - INFO - Structure 8: Step 50, Confidence: 0.5692, RMSE: 0.1199 Å, Max Error: 0.7489 Å, Step Size: 0.005000, Best: step 48
+2025-08-25 22:49:18,512 - GPBB - INFO - Structure 6: Step 50, Confidence: 0.5670, RMSE: 0.1086 Å, Max Error: 0.6002 Å, Step Size: 0.005000, Best: step 50
+2025-08-25 22:49:18,526 - GPBB - INFO - Structure 2: Step 50, Confidence: 0.5257, RMSE: 0.1224 Å, Max Error: 0.6363 Å, Step Size: 0.005000, Best: step 50
+2025-08-25 22:49:18,625 - GPBB - INFO - Structure 4: Step 50, Confidence: 0.5439, RMSE: 0.1118 Å, Max Error: 0.7161 Å, Step Size: 0.005000, Best: step 50
+2025-08-25 22:49:21,917 - GPBB - INFO - Structure 8: Step 100, Confidence: 0.6892, RMSE: 0.1068 Å, Max Error: 0.8435 Å, Step Size: 0.005000, Best: step 97
+2025-08-25 22:49:22,174 - GPBB - INFO - Structure 0: Step 50, Confidence: 0.4307, RMSE: 0.1506 Å, Max Error: 0.9962 Å, Step Size: 0.005000, Best: step 49
+2025-08-25 22:49:22,231 - GPBB - INFO - Structure 2: Step 100, Confidence: 0.6857, RMSE: 0.1144 Å, Max Error: 0.7981 Å, Step Size: 0.005000, Best: step 99
+2025-08-25 22:49:22,353 - GPBB - INFO - Structure 6: Step 100, Confidence: 0.7236, RMSE: 0.0921 Å, Max Error: 0.7549 Å, Step Size: 0.005000, Best: step 93
+2025-08-25 22:49:22,572 - GPBB - INFO - Structure 4: Step 100, Confidence: 0.6813, RMSE: 0.0986 Å, Max Error: 0.7430 Å, Step Size: 0.005000, Best: step 98
+2025-08-25 22:49:25,456 - GPBB - INFO - Structure 8: Step 150, Confidence: 0.7908, RMSE: 0.1049 Å, Max Error: 0.9381 Å, Step Size: 0.005000, Best: step 149
+2025-08-25 22:49:25,935 - GPBB - INFO - Structure 2: Step 150, Confidence: 0.7886, RMSE: 0.1178 Å, Max Error: 0.8960 Å, Step Size: 0.005000, Best: step 137
+2025-08-25 22:49:26,181 - GPBB - INFO - Structure 6: Step 150, Confidence: 0.8262, RMSE: 0.0889 Å, Max Error: 0.8755 Å, Step Size: 0.005000, Best: step 150
+2025-08-25 22:49:26,425 - GPBB - INFO - Structure 4: Step 150, Confidence: 0.7661, RMSE: 0.0930 Å, Max Error: 0.7580 Å, Step Size: 0.005000, Best: step 146
+2025-08-25 22:49:28,988 - GPBB - INFO - Structure 8: Step 200, Confidence: 0.8585, RMSE: 0.1016 Å, Max Error: 0.9695 Å, Step Size: 0.005000, Best: step 190
+2025-08-25 22:49:29,442 - GPBB - INFO - Structure 0: Step 100, Confidence: 0.6043, RMSE: 0.1552 Å, Max Error: 1.2651 Å, Step Size: 0.005000, Best: step 97
+2025-08-25 22:49:29,587 - GPBB - INFO - Structure 2: Step 200, Confidence: 0.7886, RMSE: 0.1216 Å, Max Error: 0.9568 Å, Step Size: 0.005000, Best: step 179
+2025-08-25 22:49:29,928 - GPBB - INFO - Structure 6: Step 200, Confidence: 0.8462, RMSE: 0.0881 Å, Max Error: 0.9124 Å, Step Size: 0.005000, Best: step 193
+2025-08-25 22:49:30,176 - GPBB - INFO - Structure 4: Step 200, Confidence: 0.7836, RMSE: 0.0920 Å, Max Error: 0.7766 Å, Step Size: 0.005000, Best: step 198
+2025-08-25 22:49:32,443 - GPBB - INFO - Structure 8: Step 250, Confidence: 0.8923, RMSE: 0.1011 Å, Max Error: 0.9745 Å, Step Size: 0.005000, Best: step 250
+2025-08-25 22:49:33,198 - GPBB - INFO - Structure 2: Step 250, Confidence: 0.8314, RMSE: 0.1238 Å, Max Error: 1.0008 Å, Step Size: 0.005000, Best: step 249
+2025-08-25 22:49:33,546 - GPBB - INFO - Structure 6: Step 250, Confidence: 0.8604, RMSE: 0.0874 Å, Max Error: 0.9292 Å, Step Size: 0.005000, Best: step 237
+2025-08-25 22:49:33,663 - GPBB - INFO - Structure 8: Converged at step 268 - Confidence: 0.9015, RMSE: 0.1013 Å
+2025-08-25 22:49:33,663 - GPBB - INFO - Structure 8: Optimization complete - Best step: 268, Confidence: 0.9015, RMSE: 0.1013 Å, Converged: 293/325
+2025-08-25 22:49:33,664 - GPBB - INFO - Process 4: Completed structure 8
+2025-08-25 22:49:33,739 - GPBB - INFO - Structure 9: Evaluating 346 bonds within 3.0 Å
+2025-08-25 22:49:33,739 - GPBB - INFO - Structure 9: Starting optimization - Initial RMSE: 0.2212 Å, Confidence: 0.1416, Evaluating 346 bonds
+2025-08-25 22:49:33,975 - GPBB - INFO - Structure 4: Step 250, Confidence: 0.8538, RMSE: 0.0930 Å, Max Error: 0.8023 Å, Step Size: 0.005000, Best: step 250
+2025-08-25 22:49:36,796 - GPBB - INFO - Structure 2: Step 300, Confidence: 0.8286, RMSE: 0.1249 Å, Max Error: 1.0067 Å, Step Size: 0.005000, Best: step 265
+2025-08-25 22:49:36,811 - GPBB - INFO - Structure 0: Step 150, Confidence: 0.7179, RMSE: 0.1630 Å, Max Error: 1.3567 Å, Step Size: 0.005000, Best: step 149
+2025-08-25 22:49:37,377 - GPBB - INFO - Structure 6: Step 300, Confidence: 0.8376, RMSE: 0.0870 Å, Max Error: 0.9340 Å, Step Size: 0.005000, Best: step 257
+2025-08-25 22:49:37,546 - GPBB - INFO - Structure 9: Step 50, Confidence: 0.5491, RMSE: 0.1098 Å, Max Error: 0.6678 Å, Step Size: 0.005000, Best: step 49
+2025-08-25 22:49:37,775 - GPBB - INFO - Structure 4: Step 300, Confidence: 0.8246, RMSE: 0.0941 Å, Max Error: 0.8312 Å, Step Size: 0.005000, Best: step 255
+2025-08-25 22:49:40,441 - GPBB - INFO - Structure 2: Step 350, Confidence: 0.8343, RMSE: 0.1259 Å, Max Error: 1.0120 Å, Step Size: 0.005000, Best: step 265
+2025-08-25 22:49:41,083 - GPBB - INFO - Structure 6: Step 350, Confidence: 0.8917, RMSE: 0.0872 Å, Max Error: 0.9553 Å, Step Size: 0.005000, Best: step 257
+2025-08-25 22:49:41,106 - GPBB - INFO - Structure 9: Step 100, Confidence: 0.7341, RMSE: 0.0918 Å, Max Error: 0.9186 Å, Step Size: 0.005000, Best: step 92
+2025-08-25 22:49:41,617 - GPBB - INFO - Structure 4: Step 350, Confidence: 0.8538, RMSE: 0.0941 Å, Max Error: 0.8382 Å, Step Size: 0.005000, Best: step 336
+2025-08-25 22:49:42,971 - GPBB - INFO - Structure 6: Converged at step 375 - Confidence: 0.9003, RMSE: 0.0868 Å
+2025-08-25 22:49:42,971 - GPBB - INFO - Structure 6: Optimization complete - Best step: 375, Confidence: 0.9003, RMSE: 0.0868 Å, Converged: 316/351
+2025-08-25 22:49:42,972 - GPBB - INFO - Process 3: Completed structure 6
+2025-08-25 22:49:43,046 - GPBB - INFO - Structure 7: Evaluating 329 bonds within 3.0 Å
+2025-08-25 22:49:43,046 - GPBB - INFO - Structure 7: Starting optimization - Initial RMSE: 0.2241 Å, Confidence: 0.1337, Evaluating 329 bonds
+2025-08-25 22:49:43,930 - GPBB - INFO - Structure 0: Step 200, Confidence: 0.7963, RMSE: 0.1715 Å, Max Error: 1.4261 Å, Step Size: 0.005000, Best: step 197
+2025-08-25 22:49:44,072 - GPBB - INFO - Structure 2: Step 400, Confidence: 0.8629, RMSE: 0.1265 Å, Max Error: 1.0104 Å, Step Size: 0.005000, Best: step 265
+2025-08-25 22:49:44,771 - GPBB - INFO - Structure 9: Step 150, Confidence: 0.8295, RMSE: 0.0878 Å, Max Error: 1.0257 Å, Step Size: 0.005000, Best: step 147
+2025-08-25 22:49:45,342 - GPBB - INFO - Structure 4: Step 400, Confidence: 0.8684, RMSE: 0.0947 Å, Max Error: 0.8496 Å, Step Size: 0.005000, Best: step 336
+2025-08-25 22:49:46,883 - GPBB - INFO - Structure 7: Step 50, Confidence: 0.5167, RMSE: 0.1175 Å, Max Error: 0.6207 Å, Step Size: 0.005000, Best: step 49
+2025-08-25 22:49:47,742 - GPBB - INFO - Structure 2: Step 450, Confidence: 0.8657, RMSE: 0.1268 Å, Max Error: 1.0112 Å, Step Size: 0.005000, Best: step 447
+2025-08-25 22:49:48,267 - GPBB - INFO - Structure 9: Step 200, Confidence: 0.8613, RMSE: 0.0857 Å, Max Error: 1.0415 Å, Step Size: 0.005000, Best: step 199
+2025-08-25 22:49:49,113 - GPBB - INFO - Structure 4: Step 450, Confidence: 0.8626, RMSE: 0.0950 Å, Max Error: 0.8596 Å, Step Size: 0.005000, Best: step 336
+2025-08-25 22:49:50,526 - GPBB - INFO - Structure 7: Step 100, Confidence: 0.6717, RMSE: 0.0970 Å, Max Error: 0.6956 Å, Step Size: 0.005000, Best: step 87
+2025-08-25 22:49:51,051 - GPBB - INFO - Structure 0: Step 250, Confidence: 0.8581, RMSE: 0.1774 Å, Max Error: 1.4497 Å, Step Size: 0.005000, Best: step 236
+2025-08-25 22:49:51,385 - GPBB - INFO - Structure 2: Step 500, Confidence: 0.8686, RMSE: 0.1272 Å, Max Error: 1.0203 Å, Step Size: 0.005000, Best: step 457
+2025-08-25 22:49:51,783 - GPBB - INFO - Structure 9: Step 250, Confidence: 0.8873, RMSE: 0.0854 Å, Max Error: 1.0436 Å, Step Size: 0.005000, Best: step 250
+2025-08-25 22:49:52,060 - GPBB - INFO - Structure 9: Converged at step 254 - Confidence: 0.9075, RMSE: 0.0852 Å
+2025-08-25 22:49:52,060 - GPBB - INFO - Structure 9: Optimization complete - Best step: 254, Confidence: 0.9075, RMSE: 0.0852 Å, Converged: 314/346
+2025-08-25 22:49:52,063 - GPBB - INFO - Process 4: Completed structure 9
+2025-08-25 22:49:52,063 - GPBB - INFO - Process 4: Batch complete
+2025-08-25 22:49:52,807 - GPBB - INFO - Structure 4: Step 500, Confidence: 0.8655, RMSE: 0.0957 Å, Max Error: 0.8694 Å, Step Size: 0.005000, Best: step 336
+2025-08-25 22:49:54,017 - GPBB - INFO - Structure 7: Step 150, Confidence: 0.7386, RMSE: 0.0899 Å, Max Error: 0.7389 Å, Step Size: 0.005000, Best: step 147
+2025-08-25 22:49:54,764 - GPBB - INFO - Structure 2: Step 550, Confidence: 0.8571, RMSE: 0.1276 Å, Max Error: 1.0291 Å, Step Size: 0.005000, Best: step 519
+2025-08-25 22:49:56,234 - GPBB - INFO - Structure 4: Step 550, Confidence: 0.8421, RMSE: 0.0959 Å, Max Error: 0.8748 Å, Step Size: 0.005000, Best: step 336
+2025-08-25 22:49:57,308 - GPBB - INFO - Structure 7: Step 200, Confidence: 0.7356, RMSE: 0.0863 Å, Max Error: 0.7480 Å, Step Size: 0.005000, Best: step 176
+2025-08-25 22:49:57,517 - GPBB - INFO - Structure 0: Step 300, Confidence: 0.8614, RMSE: 0.1802 Å, Max Error: 1.4665 Å, Step Size: 0.005000, Best: step 291
+2025-08-25 22:49:57,929 - GPBB - INFO - Structure 2: Converged at step 599 - Confidence: 0.9000, RMSE: 0.1282 Å
+2025-08-25 22:49:57,929 - GPBB - INFO - Structure 2: Optimization complete - Best step: 599, Confidence: 0.9000, RMSE: 0.1282 Å, Converged: 315/350
+2025-08-25 22:49:57,932 - GPBB - INFO - Process 1: Completed structure 2
+2025-08-25 22:49:58,004 - GPBB - INFO - Structure 3: Evaluating 359 bonds within 3.0 Å
+2025-08-25 22:49:58,004 - GPBB - INFO - Structure 3: Starting optimization - Initial RMSE: 0.2282 Å, Confidence: 0.1198, Evaluating 359 bonds
+2025-08-25 22:49:59,540 - GPBB - INFO - Structure 4: Step 600, Confidence: 0.8333, RMSE: 0.0965 Å, Max Error: 0.8813 Å, Step Size: 0.005000, Best: step 336
+2025-08-25 22:50:00,517 - GPBB - INFO - Structure 7: Step 250, Confidence: 0.7964, RMSE: 0.0861 Å, Max Error: 0.7624 Å, Step Size: 0.005000, Best: step 236
+2025-08-25 22:50:01,579 - GPBB - INFO - Structure 3: Step 50, Confidence: 0.5376, RMSE: 0.1341 Å, Max Error: 0.8432 Å, Step Size: 0.005000, Best: step 50
+2025-08-25 22:50:02,857 - GPBB - INFO - Structure 4: Step 650, Confidence: 0.8596, RMSE: 0.0969 Å, Max Error: 0.8845 Å, Step Size: 0.005000, Best: step 336
+2025-08-25 22:50:03,740 - GPBB - INFO - Structure 7: Step 300, Confidence: 0.8024, RMSE: 0.0866 Å, Max Error: 0.7832 Å, Step Size: 0.005000, Best: step 290
+2025-08-25 22:50:03,742 - GPBB - INFO - Structure 0: Step 350, Confidence: 0.8598, RMSE: 0.1813 Å, Max Error: 1.4755 Å, Step Size: 0.005000, Best: step 327
+2025-08-25 22:50:04,999 - GPBB - INFO - Structure 3: Step 100, Confidence: 0.6741, RMSE: 0.1255 Å, Max Error: 0.9592 Å, Step Size: 0.005000, Best: step 95
+2025-08-25 22:50:06,165 - GPBB - INFO - Structure 4: Step 700, Confidence: 0.8684, RMSE: 0.0975 Å, Max Error: 0.8957 Å, Step Size: 0.005000, Best: step 686
+2025-08-25 22:50:06,954 - GPBB - INFO - Structure 7: Step 350, Confidence: 0.8055, RMSE: 0.0867 Å, Max Error: 0.7919 Å, Step Size: 0.005000, Best: step 333
+2025-08-25 22:50:08,397 - GPBB - INFO - Structure 3: Step 150, Confidence: 0.7521, RMSE: 0.1257 Å, Max Error: 1.0511 Å, Step Size: 0.005000, Best: step 142
+2025-08-25 22:50:09,469 - GPBB - INFO - Structure 4: Step 750, Confidence: 0.8626, RMSE: 0.0976 Å, Max Error: 0.8980 Å, Step Size: 0.005000, Best: step 686
+2025-08-25 22:50:09,574 - GPBB - INFO - Structure 0: Converged at step 397 - Confidence: 0.9065, RMSE: 0.1829 Å
+2025-08-25 22:50:09,574 - GPBB - INFO - Structure 0: Optimization complete - Best step: 397, Confidence: 0.9065, RMSE: 0.1829 Å, Converged: 543/599
+2025-08-25 22:50:09,575 - GPBB - INFO - Process 0: Completed structure 0
+2025-08-25 22:50:09,698 - GPBB - INFO - Structure 1: Evaluating 587 bonds within 3.0 Å
+2025-08-25 22:50:09,698 - GPBB - INFO - Structure 1: Starting optimization - Initial RMSE: 0.2321 Å, Confidence: 0.0443, Evaluating 587 bonds
+2025-08-25 22:50:10,142 - GPBB - INFO - Structure 7: Step 400, Confidence: 0.8146, RMSE: 0.0869 Å, Max Error: 0.8008 Å, Step Size: 0.005000, Best: step 333
+2025-08-25 22:50:11,782 - GPBB - INFO - Structure 3: Step 200, Confidence: 0.8440, RMSE: 0.1282 Å, Max Error: 1.1337 Å, Step Size: 0.005000, Best: step 200
+2025-08-25 22:50:12,791 - GPBB - INFO - Structure 4: Step 800, Confidence: 0.8538, RMSE: 0.0980 Å, Max Error: 0.9061 Å, Step Size: 0.005000, Best: step 686
+2025-08-25 22:50:13,351 - GPBB - INFO - Structure 7: Step 450, Confidence: 0.8207, RMSE: 0.0875 Å, Max Error: 0.8127 Å, Step Size: 0.005000, Best: step 447
+2025-08-25 22:50:14,045 - GPBB - INFO - Structure 4: Converged at step 819 - Confidence: 0.9035, RMSE: 0.0980 Å
+2025-08-25 22:50:14,045 - GPBB - INFO - Structure 4: Optimization complete - Best step: 819, Confidence: 0.9035, RMSE: 0.0980 Å, Converged: 309/342
+2025-08-25 22:50:14,046 - GPBB - INFO - Process 2: Completed structure 4
+2025-08-25 22:50:14,115 - GPBB - INFO - Structure 5: Evaluating 338 bonds within 3.0 Å
+2025-08-25 22:50:14,115 - GPBB - INFO - Structure 5: Starting optimization - Initial RMSE: 0.2231 Å, Confidence: 0.1095, Evaluating 338 bonds
+2025-08-25 22:50:15,148 - GPBB - INFO - Structure 3: Step 250, Confidence: 0.8635, RMSE: 0.1298 Å, Max Error: 1.2016 Å, Step Size: 0.005000, Best: step 244
+2025-08-25 22:50:15,897 - GPBB - INFO - Structure 1: Step 50, Confidence: 0.4685, RMSE: 0.1411 Å, Max Error: 0.8115 Å, Step Size: 0.005000, Best: step 48
+2025-08-25 22:50:16,558 - GPBB - INFO - Structure 7: Step 500, Confidence: 0.8328, RMSE: 0.0874 Å, Max Error: 0.8217 Å, Step Size: 0.005000, Best: step 466
+2025-08-25 22:50:17,358 - GPBB - INFO - Structure 5: Step 50, Confidence: 0.5207, RMSE: 0.1179 Å, Max Error: 0.6677 Å, Step Size: 0.005000, Best: step 49
+2025-08-25 22:50:18,532 - GPBB - INFO - Structure 3: Step 300, Confidence: 0.8607, RMSE: 0.1313 Å, Max Error: 1.2192 Å, Step Size: 0.005000, Best: step 273
+2025-08-25 22:50:19,747 - GPBB - INFO - Structure 7: Step 550, Confidence: 0.8511, RMSE: 0.0865 Å, Max Error: 0.8305 Å, Step Size: 0.005000, Best: step 466
+2025-08-25 22:50:20,458 - GPBB - INFO - Structure 5: Step 100, Confidence: 0.6450, RMSE: 0.1044 Å, Max Error: 0.8810 Å, Step Size: 0.005000, Best: step 96
+2025-08-25 22:50:21,856 - GPBB - INFO - Structure 1: Step 100, Confidence: 0.7036, RMSE: 0.1375 Å, Max Error: 1.0613 Å, Step Size: 0.005000, Best: step 100
+2025-08-25 22:50:21,901 - GPBB - INFO - Structure 3: Step 350, Confidence: 0.8412, RMSE: 0.1322 Å, Max Error: 1.2214 Å, Step Size: 0.005000, Best: step 273
+2025-08-25 22:50:22,955 - GPBB - INFO - Structure 7: Step 600, Confidence: 0.8480, RMSE: 0.0863 Å, Max Error: 0.8395 Å, Step Size: 0.005000, Best: step 576
+2025-08-25 22:50:23,533 - GPBB - INFO - Structure 5: Step 150, Confidence: 0.7544, RMSE: 0.1048 Å, Max Error: 0.9789 Å, Step Size: 0.005000, Best: step 146
+2025-08-25 22:50:25,243 - GPBB - INFO - Structure 3: Step 400, Confidence: 0.8552, RMSE: 0.1346 Å, Max Error: 1.2364 Å, Step Size: 0.005000, Best: step 273
+2025-08-25 22:50:26,137 - GPBB - INFO - Structure 7: Step 650, Confidence: 0.8450, RMSE: 0.0868 Å, Max Error: 0.8441 Å, Step Size: 0.005000, Best: step 576
+2025-08-25 22:50:26,571 - GPBB - INFO - Structure 5: Step 200, Confidence: 0.8314, RMSE: 0.1063 Å, Max Error: 0.9869 Å, Step Size: 0.005000, Best: step 189
+2025-08-25 22:50:27,714 - GPBB - INFO - Structure 1: Step 150, Confidence: 0.7700, RMSE: 0.1437 Å, Max Error: 1.2106 Å, Step Size: 0.005000, Best: step 149
+2025-08-25 22:50:28,600 - GPBB - INFO - Structure 3: Step 450, Confidence: 0.8719, RMSE: 0.1337 Å, Max Error: 1.2433 Å, Step Size: 0.005000, Best: step 273
+2025-08-25 22:50:29,330 - GPBB - INFO - Structure 7: Step 700, Confidence: 0.8663, RMSE: 0.0864 Å, Max Error: 0.8484 Å, Step Size: 0.005000, Best: step 686
+2025-08-25 22:50:29,614 - GPBB - INFO - Structure 5: Step 250, Confidence: 0.8580, RMSE: 0.1069 Å, Max Error: 1.0136 Å, Step Size: 0.005000, Best: step 249
+2025-08-25 22:50:31,946 - GPBB - INFO - Structure 3: Step 500, Confidence: 0.8496, RMSE: 0.1350 Å, Max Error: 1.2522 Å, Step Size: 0.005000, Best: step 273
+2025-08-25 22:50:32,496 - GPBB - INFO - Structure 7: Step 750, Confidence: 0.8450, RMSE: 0.0874 Å, Max Error: 0.8572 Å, Step Size: 0.005000, Best: step 686
+2025-08-25 22:50:32,631 - GPBB - INFO - Structure 5: Step 300, Confidence: 0.8846, RMSE: 0.1074 Å, Max Error: 1.0289 Å, Step Size: 0.005000, Best: step 286
+2025-08-25 22:50:33,557 - GPBB - INFO - Structure 1: Step 200, Confidence: 0.8433, RMSE: 0.1482 Å, Max Error: 1.3016 Å, Step Size: 0.005000, Best: step 185
+2025-08-25 22:50:35,304 - GPBB - INFO - Structure 3: Step 550, Confidence: 0.8663, RMSE: 0.1352 Å, Max Error: 1.2603 Å, Step Size: 0.005000, Best: step 273
+2025-08-25 22:50:35,672 - GPBB - INFO - Structure 7: Step 800, Confidence: 0.8267, RMSE: 0.0880 Å, Max Error: 0.8586 Å, Step Size: 0.005000, Best: step 686
+2025-08-25 22:50:35,681 - GPBB - INFO - Structure 5: Step 350, Confidence: 0.8846, RMSE: 0.1076 Å, Max Error: 1.0632 Å, Step Size: 0.005000, Best: step 286
+2025-08-25 22:50:38,656 - GPBB - INFO - Structure 3: Step 600, Confidence: 0.8524, RMSE: 0.1359 Å, Max Error: 1.2613 Å, Step Size: 0.005000, Best: step 273
+2025-08-25 22:50:38,719 - GPBB - INFO - Structure 5: Step 400, Confidence: 0.8669, RMSE: 0.1077 Å, Max Error: 1.0685 Å, Step Size: 0.005000, Best: step 286
+2025-08-25 22:50:38,864 - GPBB - INFO - Structure 7: Step 850, Confidence: 0.8602, RMSE: 0.0880 Å, Max Error: 0.8615 Å, Step Size: 0.005000, Best: step 686
+2025-08-25 22:50:39,403 - GPBB - INFO - Structure 1: Step 250, Confidence: 0.8859, RMSE: 0.1524 Å, Max Error: 1.3839 Å, Step Size: 0.005000, Best: step 239
+2025-08-25 22:50:41,010 - GPBB - INFO - Structure 1: Converged at step 264 - Confidence: 0.9029, RMSE: 0.1538 Å
+2025-08-25 22:50:41,010 - GPBB - INFO - Structure 1: Optimization complete - Best step: 264, Confidence: 0.9029, RMSE: 0.1538 Å, Converged: 530/587
+2025-08-25 22:50:41,012 - GPBB - INFO - Process 0: Completed structure 1
+2025-08-25 22:50:41,012 - GPBB - INFO - Process 0: Batch complete
+2025-08-25 22:50:41,705 - GPBB - INFO - Structure 5: Step 450, Confidence: 0.8787, RMSE: 0.1078 Å, Max Error: 1.0775 Å, Step Size: 0.005000, Best: step 286
+2025-08-25 22:50:41,971 - GPBB - INFO - Structure 3: Step 650, Confidence: 0.8607, RMSE: 0.1360 Å, Max Error: 1.2695 Å, Step Size: 0.005000, Best: step 618
+2025-08-25 22:50:42,006 - GPBB - INFO - Structure 7: Step 900, Confidence: 0.8389, RMSE: 0.0884 Å, Max Error: 0.8645 Å, Step Size: 0.005000, Best: step 686
+2025-08-25 22:50:44,647 - GPBB - INFO - Structure 5: Step 500, Confidence: 0.8757, RMSE: 0.1074 Å, Max Error: 1.0815 Å, Step Size: 0.005000, Best: step 286
+2025-08-25 22:50:45,107 - GPBB - INFO - Structure 7: Step 950, Confidence: 0.8693, RMSE: 0.0886 Å, Max Error: 0.8675 Å, Step Size: 0.005000, Best: step 686
+2025-08-25 22:50:45,246 - GPBB - INFO - Structure 3: Step 700, Confidence: 0.8524, RMSE: 0.1368 Å, Max Error: 1.2737 Å, Step Size: 0.005000, Best: step 618
+2025-08-25 22:50:47,747 - GPBB - INFO - Structure 5: Step 550, Confidence: 0.8817, RMSE: 0.1074 Å, Max Error: 1.0815 Å, Step Size: 0.005000, Best: step 286
+2025-08-25 22:50:48,344 - GPBB - INFO - Structure 7: Step 1000, Confidence: 0.8511, RMSE: 0.0888 Å, Max Error: 0.8660 Å, Step Size: 0.005000, Best: step 686
+2025-08-25 22:50:48,638 - GPBB - INFO - Structure 3: Step 750, Confidence: 0.8607, RMSE: 0.1374 Å, Max Error: 1.2858 Å, Step Size: 0.005000, Best: step 618
+2025-08-25 22:50:50,457 - GPBB - INFO - Structure 5: Converged at step 596 - Confidence: 0.9024, RMSE: 0.1077 Å
+2025-08-25 22:50:50,457 - GPBB - INFO - Structure 5: Optimization complete - Best step: 596, Confidence: 0.9024, RMSE: 0.1077 Å, Converged: 305/338
+2025-08-25 22:50:50,459 - GPBB - INFO - Process 2: Completed structure 5
+2025-08-25 22:50:50,459 - GPBB - INFO - Process 2: Batch complete
+2025-08-25 22:50:51,411 - GPBB - INFO - Structure 7: Step 1050, Confidence: 0.8541, RMSE: 0.0890 Å, Max Error: 0.8660 Å, Step Size: 0.005000, Best: step 686
+2025-08-25 22:50:51,878 - GPBB - INFO - Structure 3: Step 800, Confidence: 0.8607, RMSE: 0.1377 Å, Max Error: 1.2904 Å, Step Size: 0.005000, Best: step 618
+2025-08-25 22:50:54,408 - GPBB - INFO - Structure 7: Step 1100, Confidence: 0.8480, RMSE: 0.0891 Å, Max Error: 0.8705 Å, Step Size: 0.005000, Best: step 686
+2025-08-25 22:50:55,019 - GPBB - INFO - Structure 3: Step 850, Confidence: 0.8719, RMSE: 0.1382 Å, Max Error: 1.2962 Å, Step Size: 0.005000, Best: step 618
+2025-08-25 22:50:57,377 - GPBB - INFO - Structure 7: Step 1150, Confidence: 0.8602, RMSE: 0.0894 Å, Max Error: 0.8751 Å, Step Size: 0.005000, Best: step 1105
+2025-08-25 22:50:58,152 - GPBB - INFO - Structure 3: Step 900, Confidence: 0.8663, RMSE: 0.1389 Å, Max Error: 1.3000 Å, Step Size: 0.005000, Best: step 856
+2025-08-25 22:51:00,343 - GPBB - INFO - Structure 7: Step 1200, Confidence: 0.8541, RMSE: 0.0893 Å, Max Error: 0.8751 Å, Step Size: 0.005000, Best: step 1105
+2025-08-25 22:51:01,284 - GPBB - INFO - Structure 3: Step 950, Confidence: 0.8579, RMSE: 0.1393 Å, Max Error: 1.3025 Å, Step Size: 0.005000, Best: step 856
+2025-08-25 22:51:03,320 - GPBB - INFO - Structure 7: Step 1250, Confidence: 0.8602, RMSE: 0.0896 Å, Max Error: 0.8781 Å, Step Size: 0.005000, Best: step 1105
+2025-08-25 22:51:04,426 - GPBB - INFO - Structure 3: Step 1000, Confidence: 0.8607, RMSE: 0.1398 Å, Max Error: 1.3066 Å, Step Size: 0.005000, Best: step 856
+2025-08-25 22:51:06,288 - GPBB - INFO - Structure 7: Step 1300, Confidence: 0.8541, RMSE: 0.0895 Å, Max Error: 0.8781 Å, Step Size: 0.005000, Best: step 1258
+2025-08-25 22:51:07,564 - GPBB - INFO - Structure 3: Step 1050, Confidence: 0.8774, RMSE: 0.1400 Å, Max Error: 1.3056 Å, Step Size: 0.005000, Best: step 856
+2025-08-25 22:51:09,259 - GPBB - INFO - Structure 7: Step 1350, Confidence: 0.8754, RMSE: 0.0897 Å, Max Error: 0.8827 Å, Step Size: 0.005000, Best: step 1258
+2025-08-25 22:51:10,699 - GPBB - INFO - Structure 3: Step 1100, Confidence: 0.8524, RMSE: 0.1405 Å, Max Error: 1.3118 Å, Step Size: 0.005000, Best: step 856
+2025-08-25 22:51:12,235 - GPBB - INFO - Structure 7: Step 1400, Confidence: 0.8784, RMSE: 0.0899 Å, Max Error: 0.8827 Å, Step Size: 0.005000, Best: step 1365
+2025-08-25 22:51:13,838 - GPBB - INFO - Structure 3: Step 1150, Confidence: 0.8607, RMSE: 0.1408 Å, Max Error: 1.3170 Å, Step Size: 0.005000, Best: step 856
+2025-08-25 22:51:15,209 - GPBB - INFO - Structure 7: Step 1450, Confidence: 0.8541, RMSE: 0.0899 Å, Max Error: 0.8827 Å, Step Size: 0.005000, Best: step 1365
+2025-08-25 22:51:16,982 - GPBB - INFO - Structure 3: Step 1200, Confidence: 0.8691, RMSE: 0.1411 Å, Max Error: 1.3213 Å, Step Size: 0.005000, Best: step 856
+2025-08-25 22:51:18,183 - GPBB - INFO - Structure 7: Step 1500, Confidence: 0.8480, RMSE: 0.0899 Å, Max Error: 0.8827 Å, Step Size: 0.005000, Best: step 1365
+2025-08-25 22:51:20,124 - GPBB - INFO - Structure 3: Step 1250, Confidence: 0.8524, RMSE: 0.1415 Å, Max Error: 1.3226 Å, Step Size: 0.005000, Best: step 856
+2025-08-25 22:51:21,165 - GPBB - INFO - Structure 7: Step 1550, Confidence: 0.8632, RMSE: 0.0901 Å, Max Error: 0.8827 Å, Step Size: 0.005000, Best: step 1365
+2025-08-25 22:51:23,269 - GPBB - INFO - Structure 3: Step 1300, Confidence: 0.8496, RMSE: 0.1416 Å, Max Error: 1.3231 Å, Step Size: 0.005000, Best: step 856
+2025-08-25 22:51:24,139 - GPBB - INFO - Structure 7: Step 1600, Confidence: 0.8571, RMSE: 0.0901 Å, Max Error: 0.8873 Å, Step Size: 0.005000, Best: step 1365
+2025-08-25 22:51:26,415 - GPBB - INFO - Structure 3: Step 1350, Confidence: 0.8802, RMSE: 0.1420 Å, Max Error: 1.3263 Å, Step Size: 0.005000, Best: step 856
+2025-08-25 22:51:26,854 - GPBB - INFO - Structure 3: Early stop at step 1357 - No improvement for 501 steps, Best: step 856 (Conf: 0.8942, RMSE: 0.1385 Å)
+2025-08-25 22:51:26,855 - GPBB - INFO - Structure 3: Reverting to best state from step 856
+2025-08-25 22:51:26,855 - GPBB - INFO - Structure 3: Optimization complete - Best step: 856, Confidence: 0.8942, RMSE: 0.1385 Å, Converged: 321/359
+2025-08-25 22:51:26,857 - GPBB - INFO - Process 1: Completed structure 3
+2025-08-25 22:51:26,857 - GPBB - INFO - Process 1: Batch complete
+2025-08-25 22:51:27,118 - GPBB - INFO - Structure 7: Step 1650, Confidence: 0.8632, RMSE: 0.0899 Å, Max Error: 0.8857 Å, Step Size: 0.005000, Best: step 1365
+2025-08-25 22:51:30,098 - GPBB - INFO - Structure 7: Step 1700, Confidence: 0.8663, RMSE: 0.0901 Å, Max Error: 0.8857 Å, Step Size: 0.005000, Best: step 1365
+2025-08-25 22:51:33,022 - GPBB - INFO - Structure 7: Step 1750, Confidence: 0.8693, RMSE: 0.0904 Å, Max Error: 0.8903 Å, Step Size: 0.005000, Best: step 1365
+2025-08-25 22:51:35,942 - GPBB - INFO - Structure 7: Step 1800, Confidence: 0.8602, RMSE: 0.0902 Å, Max Error: 0.8903 Å, Step Size: 0.005000, Best: step 1365
+2025-08-25 22:51:38,855 - GPBB - INFO - Structure 7: Step 1850, Confidence: 0.8875, RMSE: 0.0904 Å, Max Error: 0.8903 Å, Step Size: 0.005000, Best: step 1365
+2025-08-25 22:51:39,790 - GPBB - INFO - Structure 7: Early stop at step 1866 - No improvement for 501 steps, Best: step 1365 (Conf: 0.8997, RMSE: 0.0899 Å)
+2025-08-25 22:51:39,790 - GPBB - INFO - Structure 7: Reverting to best state from step 1365
+2025-08-25 22:51:39,790 - GPBB - INFO - Structure 7: Optimization complete - Best step: 1365, Confidence: 0.8997, RMSE: 0.0899 Å, Converged: 296/329
+2025-08-25 22:51:39,793 - GPBB - INFO - Process 3: Completed structure 7
+2025-08-25 22:51:39,793 - GPBB - INFO - Process 3: Batch complete
+2025-08-25 22:51:39,842 - GPBB - INFO - Algorithm complete: 10 structures
+2025-08-25 22:51:39,842 - GPBB - INFO - Results saved to: bladjustgpbb_traj/BLAdjustGPBB_Adjusted.xyz

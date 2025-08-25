@@ -1,0 +1,20 @@
+============================================================
+               GPBB - Bond Length Adjustment                
+============================================================
+Configuration: config.yaml
+Algorithm: BL
+------------------------------------------------------------
+Input file: test.xyz
+Log file: gpbb.log
+Cores: 5
+Molecule protection: True
+Adaptive optimization: True
+Target confidence: 0.9
+Tolerance: 0.05 Å
+============================================================
+
+============================================================
+Algorithm completed successfully!
+Results saved in *_traj/ directory
+Check gpbb.log for details
+============================================================
