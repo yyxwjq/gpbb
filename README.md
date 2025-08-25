@@ -89,8 +89,8 @@ gpbb --help
 | `filename` | Input structure file path | Required |
 | `elements` | Element replacement mapping | Required |
 | `scale_factors` | Bond length scale factors | Required |
-| `tolerance` | Bond length tolerance (Å) | 0.05 |
-| `confidence_level` | Target confidence | 0.90 |
+| `tolerance` | Bond length tolerance (Å) | 0.10 |
+| `confidence_level` | Target confidence | 0.80 |
 
 #### Optimization Control
 
@@ -105,7 +105,7 @@ gpbb --help
 
 | Parameter | Description | Default |
 |-----------|-------------|---------|
-| `enable_molecule_protection` | Enable molecule protection | false |
+| `enable_molecule_protection` | Enable molecule protection | true |
 | `molecule_detection_threshold` | Molecule detection threshold (Å) | 1.5 |
 | `molecular_elements` | Elements that can form molecules | ['C','H','O','N','S','P'] |
 
