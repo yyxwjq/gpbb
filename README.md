@@ -37,10 +37,6 @@ cd gpbb
 
 # Install package
 pip install -e .
-
-# Or use setup script
-chmod +x setup.sh
-./setup.sh
 ```
 
 ### Usage
