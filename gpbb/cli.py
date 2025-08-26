@@ -54,7 +54,7 @@ def run_algorithm(algorithm: str, config_file: str) -> None:
         os.remove('gpbb.log')
     
     if algorithm.lower() == 'bl' or algorithm.lower() == 'bl_adjust':
-        from bl import BLAdjustGPBB
+        from .bl import BLAdjustGPBB
         runner = BLAdjustGPBB(config_file)
     else:
         raise ValueError(f"Unknown algorithm: {algorithm}")

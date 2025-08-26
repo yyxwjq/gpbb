@@ -11,7 +11,7 @@ import numpy as np
 from typing import Dict, List, Tuple, Optional, Set, Any
 from dataclasses import dataclass, field
 from ase import Atoms
-from base import BaseGPBB
+from .base import BaseGPBB
 
 
 @dataclass

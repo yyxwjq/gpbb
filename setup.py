@@ -1,8 +1,4 @@
 #!/usr/bin/env python
-"""
-Setup script for GPBB package
-"""
-
 from setuptools import setup, find_packages
 from pathlib import Path
 
@@ -19,8 +15,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/yourusername/gpbb",
     
-    py_modules=["base", "bl"],
-    scripts=["gpbb"],
+    packages=find_packages(),
     
     install_requires=[
         "numpy>=1.19.0",
@@ -43,7 +38,6 @@ setup(
         "Intended Audience :: Science/Research",
         "Topic :: Scientific/Engineering :: Chemistry",
         "Topic :: Scientific/Engineering :: Physics",
-        "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
@@ -56,12 +50,13 @@ setup(
     python_requires=">=3.7",
     
     package_data={
-        "": ["*.yaml", "*.md"],
+        "gpbb": ["*.yaml"],
     },
     
+    # 关键修改：使用正确的入口点
     entry_points={
         "console_scripts": [
-            "gpbb=gpbb:main",
+            "gpbb=gpbb.cli:main",  # 指向 gpbb/cli.py 中的 main 函数
         ],
     },
 )

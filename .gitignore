@@ -1,1 +1,10 @@
-**/__pycache__
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+build/
+dist/
+*.egg
+gpbb.log
+*_traj/
