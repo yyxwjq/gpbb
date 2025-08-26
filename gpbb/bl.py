@@ -2,6 +2,7 @@
 """
 BL_adjust Algorithm - Improved Version with Better State Management
 Enhanced best state tracking and clearer convergence logic
+Integrated with unified molecule analysis system
 """
 
 import copy
@@ -11,7 +12,7 @@ import numpy as np
 from typing import Dict, List, Tuple, Optional, Set, Any
 from dataclasses import dataclass, field
 from ase import Atoms
-from .base import BaseGPBB
+from .base import BaseGPBB, MoleculeAnalyzer
 
 
 @dataclass
@@ -122,15 +123,17 @@ class BLAdjustGPBB(BaseGPBB):
     def _log_algorithm_info(self) -> None:
         """Log BL_adjust specific information"""
         self.logger.info(f"Algorithm: BL_adjust (Bond Length Optimization)")
-        self.logger.info(f"Distance Cutoff: {self.config['evaluation_distance_cutoff']} Å")
+        self.logger.info(f"Distance Cutoff: {self.config['evaluation_distance_cutoff']} Ã…")
         self.logger.info(f"Adaptive Step: {'Enabled' if self.config['use_adaptive_step'] else 'Disabled'}")
         self.logger.info(f"Initial Step Size: {self.config['initial_step_size']}")
     
-    def _adjust_multi_element(self, image: Atoms, rank: int, idx: int) -> Atoms:
+    def _adjust_multi_element(self, image: Atoms, rank: int, idx: int,
+                            molecule_analyzer: MoleculeAnalyzer) -> Atoms:
         """Adjust multi-element structure using BL optimization"""
-        return self._optimize_structure(image, rank, idx)
+        return self._optimize_structure(image, rank, idx, molecule_analyzer)
     
-    def _optimize_structure(self, image: Atoms, rank: int, idx: int) -> Atoms:
+    def _optimize_structure(self, image: Atoms, rank: int, idx: int,
+                          molecule_analyzer: MoleculeAnalyzer) -> Atoms:
         """Main optimization routine with improved state tracking"""
         logger = logging.getLogger('GPBB')
         
@@ -141,10 +144,18 @@ class BLAdjustGPBB(BaseGPBB):
         # Replace elements
         self._replace_elements(working_image)
         
-        # Detect molecules if enabled
-        molecules = self._detect_molecules(working_image)
+        # Detect and analyze molecules using unified analyzer
+        molecule_analysis = molecule_analyzer.detect_and_analyze(working_image)
+        molecules = [set(species['indices']) for species in molecule_analysis]
+        
+        # Log molecule information
         if molecules:
-            self._log_molecules(molecules, working_image.symbols, idx)
+            self._log_molecules(molecule_analysis, idx)
+        
+        # Save molecule analysis if requested
+        if self.config.get('output_molecule_analysis', False):
+            analysis_dir = self.config.get('molecule_analysis_dir', 'molecule_analysis')
+            molecule_analyzer.save_analysis_results(molecule_analysis, analysis_dir, idx)
         
         # Initialize optimization
         tracker = self._initialize_tracker(
@@ -153,7 +164,7 @@ class BLAdjustGPBB(BaseGPBB):
         
         # Log initial state
         logger.info(f"Structure {idx}: Starting optimization - "
-                   f"Initial RMSE: {tracker.initial_state.rmse:.4f} Å, "
+                   f"Initial RMSE: {tracker.initial_state.rmse:.4f} Ã…, "
                    f"Confidence: {tracker.initial_state.confidence:.4f}, "
                    f"Evaluating {tracker.initial_state.n_total} bonds")
         
@@ -171,7 +182,7 @@ class BLAdjustGPBB(BaseGPBB):
         logger.info(f"Structure {idx}: Optimization complete - "
                    f"Best step: {final_tracker.best_state.step}, "
                    f"Confidence: {final_tracker.best_state.confidence:.4f}, "
-                   f"RMSE: {final_tracker.best_state.rmse:.4f} Å, "
+                   f"RMSE: {final_tracker.best_state.rmse:.4f} Ã…, "
                    f"Converged: {final_tracker.best_state.n_converged}/{final_tracker.best_state.n_total}")
         
         # Center if non-periodic
@@ -213,7 +224,7 @@ class BLAdjustGPBB(BaseGPBB):
             n_total=len(errors)
         )
         
-        logger.info(f"Structure {idx}: Evaluating {n_bonds} bonds within {cutoff} Å")
+        logger.info(f"Structure {idx}: Evaluating {n_bonds} bonds within {cutoff} Ã…")
         
         # Initialize tracker with initial state as best
         tracker = OptimizationTracker(
@@ -298,7 +309,7 @@ class BLAdjustGPBB(BaseGPBB):
             if current_state.confidence >= confidence_target:
                 logger.info(f"Structure {idx}: Converged at step {step} - "
                           f"Confidence: {current_state.confidence:.4f}, "
-                          f"RMSE: {current_state.rmse:.4f} Å")
+                          f"RMSE: {current_state.rmse:.4f} Ã…")
                 break
             
             # Early stopping
@@ -306,7 +317,7 @@ class BLAdjustGPBB(BaseGPBB):
                 logger.info(f"Structure {idx}: Early stop at step {step} - "
                           f"No improvement for {tracker.no_improvement_count} steps, "
                           f"Best: step {tracker.best_state.step} "
-                          f"(Conf: {tracker.best_state.confidence:.4f}, RMSE: {tracker.best_state.rmse:.4f} Å)")
+                          f"(Conf: {tracker.best_state.confidence:.4f}, RMSE: {tracker.best_state.rmse:.4f} Ã…)")
                 # Ensure we use best positions
                 positions = tracker.get_best_positions()
                 break
@@ -338,8 +349,8 @@ class BLAdjustGPBB(BaseGPBB):
             if step % self.config['convergence_check_interval'] == 0:
                 logger.info(f"Structure {idx}: Step {step}, "
                           f"Confidence: {current_state.confidence:.4f}, "
-                          f"RMSE: {current_state.rmse:.4f} Å, "
-                          f"Max Error: {current_state.max_error:.4f} Å, "
+                          f"RMSE: {current_state.rmse:.4f} Ã…, "
+                          f"Max Error: {current_state.max_error:.4f} Ã…, "
                           f"Step Size: {step_size:.6f}, "
                           f"Best: step {tracker.best_state.step}")
             
@@ -527,18 +538,25 @@ class BLAdjustGPBB(BaseGPBB):
         except np.linalg.LinAlgError:
             return np.array([True, True, True])
     
-    def _log_molecules(self, molecules: List[Set[int]], 
-                      symbols, idx: int) -> None:
-        """Log detected molecules"""
+    def _log_molecules(self, molecule_analysis: List[Dict[str, Any]], idx: int) -> None:
+        """Log detected molecules using unified analysis results"""
         logger = logging.getLogger('GPBB')
-        logger.debug(f"Structure {idx}: {len(molecules)} molecules detected")
         
-        for i, mol in enumerate(molecules, 1):
-            composition = {}
-            for atom_idx in mol:
-                element = symbols[atom_idx]
-                composition[element] = composition.get(element, 0) + 1
-            logger.debug(f"  Molecule {i}: {dict(composition)}")
+        # Separate single atoms and multi-atom molecules
+        single_atoms = [m for m in molecule_analysis if m['n_atoms'] == 1]
+        molecules = [m for m in molecule_analysis if m['n_atoms'] > 1]
+        
+        # Log molecules
+        if molecules:
+            logger.debug(f"Structure {idx}: {len(molecules)} molecule(s) detected")
+            for i, mol in enumerate(molecules, 1):
+                logger.debug(f"  Molecule {i}: {mol['formula']} ({mol['type']})")
+        
+        # Log single atoms
+        if single_atoms:
+            logger.debug(f"Structure {idx}: {len(single_atoms)} single atom adsorbate(s) detected")
+            for atom in single_atoms:
+                logger.debug(f"  Single atom: {atom['formula']} at index {atom['indices'][0]}")
 
 
 def main():

@@ -8,13 +8,16 @@ Input file: test.xyz
 Log file: gpbb.log
 Cores: 5
 Molecule protection: True
+Min molecule size: 2 (Multi-atom only)
 Adaptive optimization: True
 Target confidence: 0.9
 Tolerance: 0.05 Å
+Molecule analysis output: molecule_analysis/
 ============================================================
 
 ============================================================
 Algorithm completed successfully!
 Results saved in *_traj/ directory
 Check gpbb.log for details
+Molecule analysis saved in molecule_analysis/
 ============================================================

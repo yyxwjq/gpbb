@@ -44,7 +44,7 @@ scale_factors:
 # ============================================================================
 # Distance evaluation
 evaluation_distance_cutoff: 3.0  # Only optimize bonds within this distance (Angstrom)
-
+save_best_every: 100                # Log best state info every N steps
 # Convergence criteria
 tolerance: 0.05               # Bond length tolerance (Angstrom)
 confidence_level: 0.90        # Target confidence (fraction of bonds within tolerance)
@@ -88,4 +88,6 @@ num_cores: 5                    # Number of CPU cores to use
 log_level: 'INFO'              # Logging level: DEBUG, INFO, WARNING, ERROR
 convergence_check_interval: 50  # Log progress every N steps
 
-
+# Molecule Analysis Output (New Feature)
+output_molecule_analysis: true      # Save detailed molecule analysis
+molecule_analysis_dir: "molecule_analysis"  # Output directory for analysis files
